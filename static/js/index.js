@@ -11,13 +11,14 @@ window.onpageshow = function (event) {
 
 function LoadingWithMask() {
     //화면의 높이와 너비를 구합니다.
-    var maskHeight = $(document).height();
-    var maskWidth = window.document.body.clientWidth;
-    console.log(maskHeight, maskWidth);
+    // const maskHeight = $(document).height();
+    // var maskWidth = window.document.body.clientWidth;
+    const maskHeight = window.innerHeight;
+    const maskWidth = window.innerWidth;
 
     //화면에 출력할 마스크를 설정해줍니다.
-    var mask = "<div id='mask'></div>";
-    var loadingImg = "";
+    const mask = "<div id='mask'></div>";
+    let loadingImg = "";
 
     loadingImg += "<div id='loadingImg'>";
     loadingImg += "<img src='static/images/loading.gif'/>";

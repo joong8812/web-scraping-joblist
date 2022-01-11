@@ -1,7 +1,7 @@
 #mask {
     position: absolute;
     z-index: 9000;
-    background-color: #eff0f1;
+    background-color: gray;
     display: none;
     left: 0;
     top: 0;
